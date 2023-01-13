@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 35% 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    gap: 7em;
+    overflow: hidden;
+}
+.cardFront{
+    width: 447px;
+    height: 245px;
+    background-image: url("./images/bg-card-front.png");
+    margin: 60px 0;
+    transform: translateX(-5em);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardFront div{
+    padding-inline: 1.5rem;
+    position: relative;
+}
+.nameContainer{
+    display: flex;
+    justify-content: space-between;
+    top: 4rem;
+}
+.cardBack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardBack p{
+    width: 80%;
+    text-align: right;
+}
+.numberContainer{
+    top: 3rem;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.cardBack{
+    width: 447px;
+    height: 245px;
+    background-image: url("./images/bg-card-back.png");
+    color: white;
+}
+
+label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #21092F;
+}
+input{
+    border: 1px solid #DFDEE0;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+form{
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    color: #21092F;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.yearMonth{
+    display: flex;
+    gap: 5%;
+}
+.yearMonth input{
+    width: 30%;
+}
+.dateCvc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.cvc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.bottom{
+    display: flex;
+}
+.inputContainer, .inputContainer,.cvc, .dateCvc{
+    gap: 0.4em;
+}
+button{
+    color: white;
+    margin-top: 5px;
+    padding-block: 0.6em;
+    background: #21092F;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+}
+#holderName, #cardDate{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#name{
+    position: relative;
+}
+#name::after{
+    content: "ssssss";
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+form p{
+    margin: 0;
+}
+form{
+}
+#completed{
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.thank{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3.42222px;
+    color: #21092F;
+    margin-bottom: 0;
+}
+.thankDetails{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #8F8694;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cardContainer">
+        <div class="cardFront">
+            <div class="numberContainer">
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+            </div>
+            <div class="nameContainer">
+                <p id="holderName">jane appleseed</p>
+                <p id="cardDate"><span id="monthCard">00</span>/<span id="yearCard">00</span></p>
+            </div>
+        </div>
+        <div class="cardBack"><p id="cvcCard">000</p></div>
+    </div>
+    <form id="form">
+        <div class="inputContainer" id="nameContainer">
+                <label for="name">cardholder name</label>
+                <input type="text" placeholder="e.g. Jane Appleseed"  name="name" id="name">
+        </div>
+        <div class="inputContainer" id="numberContainer">
+                <label for="number">card number</label>
+                <input type="text"  placeholder="e.g. 1234 5678 9123 0000" name="number" id="number">
+        </div>
+        <div class="bottom">
+            <div class="dateCvc" id="yearMonth">
+                <label for="month">Exp. Date (MM/YY)</label>
+                <div class="yearMonth" >
+                    <input type="number" placeholder="MM" pattern="^\d{2}$"  name="month" id="month">
+                    <input type="number" placeholder="YY" pattern="^\d{2}$"  name="month" id="year">
+                </div>
+            </div>
+            <div class="cvc" id="cvcContainer">
+                <label for="cvc">cvc</label>
+                <input type="number" name="cvc" id="cvc"  placeholder="e.g. 123">
+            </div>
+        </div>
+        <button type="submit" id="button">Confirm</button>
+    </form>
+    <div id="completed">
+        <img src="./images/icon-complete.svg" alt="">
+        <p class="thank">thank you</p>
+        <p class="thankDetails">We’ve added your card details</p>
+        <button style="width: 100%; margin-top: 0.8rem;"><a href="#">Continue</a></button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
